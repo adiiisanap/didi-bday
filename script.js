@@ -82,3 +82,24 @@ function burstConfetti(count) {
     setTimeout(() => piece.remove(), 5000);
   }
 }
+
+/* Continuous falling sparkles */
+(function createFallingSparks() {
+  const field = document.querySelector(".petal-field");
+  if (!field) return;
+
+  const symbols = ["✦", "✧", "✨", "⋆", "·"];
+
+  for (let i = 0; i < 32; i++) {
+    const spark = document.createElement("span");
+    spark.className = "falling-spark";
+    spark.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+    spark.style.left = Math.random() * 100 + "%";
+    spark.style.animationDuration = (5 + Math.random() * 7) + "s";
+    spark.style.animationDelay = (-Math.random() * 12) + "s";
+    spark.style.fontSize = (10 + Math.random() * 15) + "px";
+
+    field.appendChild(spark);
+  }
+})();
