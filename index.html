@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <title>Happy Birthday, Didi! ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal-field" aria-hidden="true"></div>
+
+  <main>
+    <section class="intro screen" id="intro" aria-labelledby="intro-title">
+      <div class="intro-card">
+        <span class="eyebrow">A LITTLE SURPRISE, MADE WITH LOVE</span>
+        <div class="envelope" aria-hidden="true">
+          <span class="envelope-heart">♡</span>
+          <span class="envelope-sparkle sparkle-one">✦</span>
+          <span class="envelope-sparkle sparkle-two">✧</span>
+        </div>
+        <h1 id="intro-title">Psst… Didi!<br><em>Something special awaits.</em></h1>
+        <p>I made a little corner of the internet just for you. 💗</p>
+        <button class="primary-button" id="open-surprise">Open your surprise <span>♡</span></button>
+        <span class="tiny-note">made with all my love</span>
+      </div>
+    </section>
+
+    <section class="birthday hidden" id="birthday">
+      <nav class="topbar">
+        <a class="brand" href="#home" aria-label="Back to top">♡ for Didi</a>
+        <button class="music-button" id="music-toggle" aria-pressed="false">
+          <span class="music-icon" aria-hidden="true">♫</span>
+          <span id="music-label">Play our song</span>
+        </button>
+      </nav>
+
+      <section class="hero section-wrap" id="home">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">TODAY IS ALL ABOUT YOU</span>
+          <h1>Happy Birthday,<br><em id="hero-name">Didi!</em> 🎂</h1>
+          <p class="hero-lead">To my built-in best friend, my little ray of sunshine, and one of the most precious people in my life.</p>
+          <a class="primary-button link-button" href="#letter">A little note for you <span>↓</span></a>
+          <div class="tiny-note">♡ loved more than words can say ♡</div>
+        </div>
+        <div class="hero-visual reveal">
+          <div class="photo-halo"></div>
+          <div class="photo-frame">
+            <img id="sister-photo" src="assets/didi-photo.jpg" alt="A favourite photo of Didi">
+            <div class="photo-placeholder" id="photo-placeholder">
+              <span>♡</span>
+              <strong>Your favourite photo goes here</strong>
+              <small>Replace assets/didi-photo.jpg with her picture</small>
+            </div>
+          </div>
+          <span class="floating-note note-one">my forever favourite ✧</span>
+          <span class="floating-note note-two">lots of love ♡</span>
+          <span class="decor decor-one">✿</span>
+          <span class="decor decor-two">✦</span>
+        </div>
+      </section>
+
+      <section class="letter-section section-wrap" id="letter">
+        <div class="letter-card reveal">
+          <span class="eyebrow">A NOTE FROM MY HEART</span>
+          <h2>Dear Didi, <em>my favourite human</em> 💌</h2>
+          <div class="letter-text">
+            <p>Happy Birthday to the sweetest Didi ever! 💗</p>
+            <p>Thank you for being you—for the little things you do, the care you show, the memories we share, and the way you make life feel a little brighter just by being in it.</p>
+            <p>You deserve days filled with laughter, dreams that come true, people who cherish you, and all the happiness your heart can hold. No matter how much we grow, you’ll always have a special place in my heart.</p>
+            <p>Keep smiling, keep shining, and never forget how loved you are. I’m always cheering for you!</p>
+          </div>
+          <p class="signature">With endless love, <span>your favourite sibling ♡</span></p>
+        </div>
+      </section>
+
+      <section class="wishes section-wrap">
+        <div class="section-heading reveal">
+          <span class="eyebrow">A FEW LITTLE WISHES</span>
+          <h2>May your year be full of…</h2>
+        </div>
+        <div class="wish-grid">
+          <article class="wish-card reveal"><span>🌷</span><h3>Soft moments</h3><p>Peaceful days, warm hugs, and reasons to smile.</p></article>
+          <article class="wish-card reveal"><span>✨</span><h3>Big dreams</h3><p>New adventures and beautiful things coming your way.</p></article>
+          <article class="wish-card reveal"><span>💗</span><h3>All the love</h3><p>Reminders every day of how truly special you are.</p></article>
+        </div>
+      </section>
+
+      <section class="final-section section-wrap">
+        <div class="final-card reveal">
+          <span class="big-heart">♡</span>
+          <span class="eyebrow">ONE LAST THING…</span>
+          <h2>You make life more beautiful<br><em>just by being in it.</em></h2>
+          <p>Happy Birthday, Didi! May this new chapter be as lovely as your heart. 🎀</p>
+          <button class="primary-button" id="confetti-button">Send you a little sparkle <span>✦</span></button>
+          <div class="final-signoff">Always your sibling. Always your fan. ♡</div>
+        </div>
+      </section>
+      <footer>made with love, just for Didi <span>♡</span></footer>
+    </section>
+  </main>
+
+  <!-- Optional local audio file: add your licensed MP3 as assets/birthday-song.mp3 -->
+  <audio id="birthday-audio" loop preload="none">
+    <source src="assets/birthday-song.mp3" type="audio/mpeg">
+  </audio>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
