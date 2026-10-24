@@ -1,6 +1,6 @@
 
 const DIDI_NAME = "Didi";
-const PHOTO_PATH = "assets/didi-photo.jpeg";
+const PHOTO_PATH = "didi-photo.jpeg";
 
 const intro = document.getElementById("intro");
 const birthday = document.getElementById("birthday");
